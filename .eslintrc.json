@@ -1,0 +1,98 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "@vue/prettier"
+  ],
+  // required to lint *.vue files
+  "plugins": [
+    "vue",
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "no-console": "warn", //process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "no-debugger": "warn",
+    "vue/max-attributes-per-line": "off",
+    "vue/require-default-prop": "off",
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": [
+          "template",
+          "script"
+        ]
+      }
+    ],
+    "vue/no-v-html": "off",
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": [
+          "enum",
+          "enumMember"
+        ],
+        "format": [
+          "PascalCase"
+        ]
+      },
+      {
+        "selector": [
+          "variableLike"
+        ],
+        "format": [
+          "camelCase"
+        ],
+        "leadingUnderscore": "allow"
+      },
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": "variable",
+        "modifiers": [
+          "const"
+        ],
+        "format": [
+          "UPPER_CASE",
+          "PascalCase",
+          "camelCase"
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/models/swagger/models.ts",
+        "src/models/swagger-partners/*.ts"
+      ],
+      "rules": {
+        "no-redeclare": 0
+      }
+    }
+  ]
+}
