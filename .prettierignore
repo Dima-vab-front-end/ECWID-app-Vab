@@ -1,0 +1,7 @@
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/src/assets/libraries
+**/src/models/swagger/models.ts

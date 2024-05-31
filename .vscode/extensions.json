@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "hollowtree.vue-pack",
+    "formulahendry.auto-close-tag",
+    "dbaeumer.vscode-eslint",
+    "rohit-gohri.format-code-action",
+    "sdras.vue-vscode-snippets",
+    "esbenp.prettier-vscode",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "alefragnani.bookmarks",
+    "wmaurer.vscode-jumpy",
+    "christian-kohler.npm-intellisense",
+    "xabikos.javascriptsnippets",
+    "sdras.night-owl",
+    "johnsoncodehk.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "misterj.vue-volar-extention-pack"
+  ]
+}
